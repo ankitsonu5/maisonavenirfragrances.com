@@ -1,0 +1,227 @@
+:root {
+    --alto: #dcdcdc;
+    --black: #000000;
+    --cyan--aqua: #00c4ff;
+    --desert-storm: #f8f8f8;
+    --dove-gray: #707070;
+    --electric-violet: #ad12ff;
+    --mine-shaft: #2f2f2f;
+    --orange-peel: #ff9d00;
+    --shark: #242424;
+    --spring-green: #00ffa7;
+    --turmeric: #cab651;
+    --white: #ffffff;
+
+    --font-size-l: 15px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 17px;
+    --font-size-xxl: 18px;
+    --font-size-xxxl: 19px;
+    --font-size-xxxxl: 25px;
+
+    --font-family-raleway: "Raleway", Helvetica;
+    --font-family-the_seasons: "The Seasons", Helvetica;
+    --font-family-theseasons-bold: "TheSeasons-Bold", Helvetica;
+    --font-family-theseasons-regular: "TheSeasons-Regular", Helvetica;
+}
+
+.raleway-normal-white-10px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-bold-turmeric-18px {
+    color: var(--turmeric);
+    font-family: var(--font-family-theseasons-bold);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.raleway-normal-white-15px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-regular-normal-white-25px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: var(--font-size-xxxxl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-14px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-17px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-18px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-bold-white-18px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.raleway-normal-white-11px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-regular-normal-white-30px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-regular-normal-white-58px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-medium-white-20px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.raleway-normal-black-11px {
+    color: var(--black);
+    font-family: var(--font-family-raleway);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-bold-white-30px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-bold);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.theseasons-bold-turmeric-49px {
+    color: var(--turmeric);
+    font-family: var(--font-family-theseasons-bold);
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.theseasons-bold-white-39px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-bold);
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.theseasons-regular-normal-black-39px {
+    color: var(--black);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-19px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-bold-turmeric-35px {
+    color: var(--turmeric);
+    font-family: var(--font-family-theseasons-bold);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.theseasons-regular-normal-white-27px {
+    color: var(--white);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.theseasons-regular-normal-black-27px {
+    color: var(--black);
+    font-family: var(--font-family-theseasons-regular);
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-black-15px {
+    color: var(--black);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-black-12px {
+    color: var(--black);
+    font-family: var(--font-family-raleway);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.raleway-normal-white-22px {
+    color: var(--white);
+    font-family: var(--font-family-raleway);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}

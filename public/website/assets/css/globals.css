@@ -1,0 +1,158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+/* For all scrollable containers */
+*::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* Optional: just to hide the scrollbar */
+}
+
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "TheSeasons-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-reg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TheSeasons-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-bd.otf") format("opentype");
+}
+
+
+/* manu css start */
+
+
+.home-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* Initially hide the menu */
+  width: 400px;
+  height: 100%;
+  font-family: "TheSeasons-Bold", Helvetica;
+  background-color: black;
+  transition: right 0.2s ease-in-out;
+  /* Smooth transition */
+  z-index: 999;
+  padding: 20px;
+  color: white;
+}
+
+
+
+.home-menu.open {
+  right: 0;
+  /* Slide in */
+}
+
+.line-13 {
+  cursor: pointer;
+  width: 25px;
+}
+
+.group-2781 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.close-icon {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.close-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.line-12 {
+  transform: rotate(90deg);
+  margin-left: -24px;
+}
+
+.theseasons-bold-white-30px {
+  color: var(--white);
+  font-family: var(--font-family-theseasons-bold);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 5.62vw;
+}
+
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+}
+
+.social-media img {
+
+  background-color: white !important;
+
+  padding: 12px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* manu css End */
+
+
+:root {
+  --alto: #dcdcdc;
+  --black: #000000;
+  --cyan--aqua: #00c4ff;
+  --desert-storm: #f8f8f8;
+  --dove-gray: #707070;
+  --electric-violet: #ad12ff;
+  --mine-shaft: #2f2f2f;
+  --orange-peel: #ff9d00;
+  --shark: #242424;
+  --spring-green: #00ffa7;
+  --turmeric: #cab651;
+  --white: #ffffff;
+
+  --font-size-l: 15px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 17px;
+  --font-size-xxl: 18px;
+  --font-size-xxxl: 19px;
+  --font-size-xxxxl: 25px;
+
+  --font-family-raleway: "Raleway", Helvetica;
+  --font-family-the_seasons: "The Seasons", Helvetica;
+  --font-family-theseasons-bold: "TheSeasons-Bold", Helvetica;
+  --font-family-theseasons-regular: "TheSeasons-Regular", Helvetica;
+}
+a{
+  color:var(--white);
+}

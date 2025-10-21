@@ -1,0 +1,75 @@
+.another-fragrance-bg {
+    padding: 90px 32px;
+    max-width: 1320px;
+    margin: 0 auto;
+    background-image: url(../assets/SecondScreen/Second_BG.png);
+    background-size: 100% 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.frag-heading {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #E5E0CD;
+    text-align: center;
+}
+
+.frag-container {
+    text-align: center;
+}
+
+.header-logo img {
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .header-logo {
+    padding-bottom: 11vh;
+  }
+
+.redirection-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.redirection-btns a {
+    text-decoration: none;
+    color: white;
+}
+
+.back-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    transition: ease-in 0.2s;
+}
+
+iframe {
+    margin-top: 40px;
+    width: 100%;
+    height: 546px;
+    border: none;
+}
+
+.back-svg {
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.back-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.back-btn:hover .back-svg {
+    color: #000;
+    transition: ease-in 0.2s;
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Seasons-Bold;
+    src: url(./fonts/The-Seasons/Fontspring-DEMO-theseasons-reg.otf) format('truetype');
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+input#quizvalue {
+    display: none;
+}
+
+input {
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #E0B500;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: Seasons-Bold;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+}
+
+label {
+    color: #fff;
+}
+
+.header-logo img {
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-logo {
+    padding-bottom: 11vh;
+}

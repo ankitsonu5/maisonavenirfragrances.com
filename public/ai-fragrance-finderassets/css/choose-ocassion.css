@@ -1,0 +1,147 @@
+.ing-img {
+    width: 100px;
+    height: 100px;
+}
+
+.ing-opt-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redirection-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-logo img {
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .header-logo {
+    padding-bottom: 11vh;
+  }
+
+.occasion-page {
+    padding-top: 20px;
+    padding-bottom: 90px;
+    max-width: 1320px;
+    margin: 0 auto;
+    background-image: url(../assets/SecondScreen/Second_BG.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: #fff;
+    opacity: 70%;
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.selected {
+    border-color: #A0814C;
+    border-radius: 8px;
+    position: relative;
+    width: 150px;
+    height: 182px;
+}
+
+.selected .ing-img,
+.selected label {
+    filter: brightness(20%);
+}
+
+.selected label {
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.selected-ingredients {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.occasion-heading {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 700;
+    color: #E5E0CD;
+}
+
+.ingredient-option {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    width: 150px;
+    height: 170px;
+}
+
+.ing-opt-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.ing-options-form {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.back-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.back-svg {
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+.back-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.back-btn:hover .back-svg {
+    color: #000;
+    transition: ease-in 0.2s;
+}

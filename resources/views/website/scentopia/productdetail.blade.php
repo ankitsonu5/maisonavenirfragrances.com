@@ -1,0 +1,681 @@
+<x-app-layout>
+
+    <!-- Video Section -->
+    <div class="video-container ripple">
+        <video id="bgVideo" autoplay muted>
+            <source src="/website/scentopia/video/nebula_nectar.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Content (Initially Hidden) -->
+    <div class="content  ripple" id="content" style="display: none;">
+        <div class="container">
+            <div class="parent-container">
+                <div class="backbutton"> <a onclick="handleClick(event)" href="{{ route('scentopia.product') }}"
+                        class="know-more-btn-scentopia ">
+                        <div>Back</div>
+                    </a></div>
+            </div>
+            <div class="product-descriptionsentopia ">
+
+                <div class="row justify-content-between icon-grid">
+
+
+                    <div class="col-md-4 col-12">
+                        <img src="/website/scentopia/product/Nebula Nector_White.svg">
+                    </div>
+                    <div class="col-md-4 col-12">
+
+                        <p>Evoking the Ethereal Beauty of the Cosmos, the Scent Combines Egyptian
+                            Jasmine Absolute, Leather, and Amber in a Refined Blend.</p>
+                        <div class="know-more">
+                            <a href="https://www.maisonavenirfragrances.com/our-fragrance/detail/nebula-nectar"
+                                class="know-more-btn-scentopia ">
+                                <div>Know More</div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center icon-grid">
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(0)">
+                        <img src="/website/scentopia/icone/4.png" class="icone-image" alt="">
+                        <p>Top Note</p>
+                    </div>
+                </div>
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(1)">
+                        <img src="/website/scentopia/icone/6.png" class="icone-image" alt="">
+                        <p>Middle Note</p>
+                    </div>
+                </div>
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(2)"><img src="/website/scentopia/icone/2.png"
+                            class="icone-image" alt="">
+                        <p>Base Note</p>
+                    </div>
+                </div>
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(4)"><img src="/website/scentopia/icone/5.png"
+                            class="icone-image" alt="">
+                        <p>Natural Oils</p>
+                    </div>
+                </div>
+
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(3)"><img src="/website/scentopia/icone/3.png"
+                            class="icone-image" alt="">
+                        <p>Essential Oils</p>
+                    </div>
+                </div>
+                <div class=" col-md-2   col-4">
+                    <div class="icone-box" onclick="openPopup(5)"><img src="/website/scentopia/icone/Nostagic.png"
+                            class="icone-image" alt="">
+                        <p>Fragrance Accords</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Popup Modal -->
+    <div class="popup-overlay   mb-5 " id="popupOverlay">
+        <video id="popupVideo" autoplay muted playsinline class="background-video">
+            <source src="{{ asset('My Video-1-highlight.mp4') }}" type='video/mp4;'>
+            Your browser does not support the video tag.
+        </video>
+
+
+        <div class="popup d-flex   justify-content-center align-items-center " id="popup">
+
+            <p class="close" onclick="closePopup()">×</p>
+            <div class="popup-content">
+
+                <div class="row">
+                    <div class="col-md-5 d-flex  justify-content-center align-items-center "> <!-- 50% Image -->
+                        <div class="popup-icon ">
+                            <img id="popupImage" src="" alt="Popup Image">
+                        </div>
+                    </div>
+                    <div class="col-md-7"> <!-- 50% Text -->
+                        <!-- 50% Text -->
+                        <div class="popup-text">
+                            <h2 id="popupTitle"></h2>
+                            <div class="d-flex" id="description"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="navigation">
+                <button onclick="prevItem()"> <img src="/website/scentopia/icone/icons8-left-50.png">
+                </button>
+                <button onclick="nextItem()"> <img src="/website/scentopia/icone/icons8-right-50.png">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class=" ripple secand-section ">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-12 ">
+                    <h1 class="page-heading text-center">Moods and Occasions</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="row text-center mb-lg-4 d-none d-lg-flex">
+                <div class="col-md-5 col-6">
+                    <h2 class="section-title">Moods</h2>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+
+                </div>
+                <div class="col-md-5 col-6">
+                    <h2 class="section-title">Occasions</h2>
+                </div>
+            </div>
+
+
+            <div class="row align-items-stretch">
+                <!-- Moods Section -->
+                <div class="col-md-5 d-flex  justify-content-between">
+                    <div class="content-block">
+                        <img src="{{ asset('/website/scentopia/icone/Energetic-674e8f399e8c2.png') }}" alt="Myrrh"
+                            class="icon-bubble">
+                        <div><strong>Contains Myrrh oil</strong></div>
+                        <small><span style="color:#cab651">MOOD IMPACT:</span><br>Energizing and uplifting</small>
+                    </div>
+                    <div class="content-block">
+                        <img src="{{ asset('/website/scentopia/icone/Confident-674e8ff2606e5.png') }}"
+                            alt="Sandalwood" class="icon-bubble">
+                        <div><strong>Contains Sandalwood oil</strong></div>
+                        <small><span style="color:#cab651">MOOD IMPACT:</span><br>Boosts confidence</small>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="col-md-2 d-flex justify-content-center">
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Occasions Section -->
+                <div class="col-md-5 d-flex justify-content-between">
+                    <div class="content-block">
+                        <img src="https://www.maisonavenirfragrances.com/storage/occasion/Formal-Event-674ee852435ec.png"
+                            alt="Formal" class="icon-bubble">
+                        <div><strong>Make a bold statement</strong></div>
+                        <small>Impact:<br>Perfect for formal events</small>
+                    </div>
+                    <div class="content-block">
+                        <img src="{{ asset('/website/scentopia/icone/Traveling-674ee9c1f0243.png') }}" alt="Adventure"
+                            class="icon-bubble">
+                        <div><strong>Ignite your spirit</strong></div>
+                        <small>Impact:<br>Perfect for outdoor adventure</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container    my-4">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12 col-12 ">
+                    <h1 class="page-heading text-center  mb-5">Main Accords</h1>
+                </div>
+
+            </div>
+
+            <div class="row align-items-stretch">
+                <!-- Moods Section -->
+                <div class="col-md-6 d-flex  justify-content-center">
+                    <div class="chart-container">
+                        <canvas id="fragranceChart"></canvas>
+                    </div>
+                </div>
+
+
+
+                <!-- Divider -->
+                <div class="col-md-2 d-flex justify-content-center">
+                    <div class="divider"></div>
+                </div>
+
+                <div class="col-md-4 d-flex  justify-content-center align-items-center">
+                    <div class="gender-box">
+                        <div>Feminine</div>
+                        <div class="unisex"><img src="/website/scentopia/icone/Unisex.png" alt=""
+                                srcset=""></div>
+                        <div>Masculine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mouse"></div>
+
+
+    <div class="container text-center my-5">
+        <div class=" desktop-view">
+
+            <div class="thrdstepcontsec">
+                <div class="sglethrdstepcontpart ">
+                    <div class="thrdstepthumbsec">
+                        <img src="/website/scentopia/product/1.png">
+                    </div>
+                    <p>
+                        Inspired by the Mysteries of the Night Sky, This Opulent Fragrance
+                        Blends Sweet Apple, Warm Cinnamon, and Alluring Tonka.
+                    </p>
+                    <a href="nova-noir.html" class="viewproductbut"><img src="/website/scentopia/explore.png"></a>
+                </div>
+                <div class="sglethrdstepcontpart active ">
+                    <div class="thrdstepthumbsec  ">
+
+                        <img src="/website/scentopia/product/2.png">
+                    </div>
+                    <p>
+                        Inspired by the Vastness of Space, This Fragrance Opens With
+                        Bergamot, Lemon, and Orange, Evoking Starlight and a Cosmic
+                        Breeze.
+                    </p>
+                    <a href="{{ route('scentopia.product.detail') }}" class="viewproductbut"><img
+                            src="/website/scentopia/explore.png"></a>
+                </div>
+
+                <div class="sglethrdstepcontpart">
+                    <div class="thrdstepthumbsec">
+                        <img src="/website/scentopia/product/4.png">
+                    </div>
+                    <p>
+                        Discover the Essence of Middle Eastern Fragrance Rituals With
+                        Exquisite Boya Oud Essential Oil Blended With Rose Absolute.
+                    </p>
+                    <a href="{{ route('scentopia.product.detail') }}" class="viewproductbut"><img
+                            src="/website/scentopia/explore.png"></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="mobile-view">
+            <div class="swiper  mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <img src="/website/scentopia/product/1.png" alt="Elixir" class="img-fluid">
+                        <p class="swiper-content">An explosion of vibrant luxury, designed to ignite passion and
+                            captivate your senses.</p>
+                        <div class="explore-btn">
+                            <a href="{{ route('scentopia.product.detail') }}"> <img
+                                    src="/website/scentopia/explore.png" alt="Zenith" class=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <img src="/website/scentopia/product/2.png" alt="Supernova" class="img-fluid">
+
+                        <p class="swiper-content">An explosion of vibrant luxury, designed to ignite passion and
+                            captivate your senses.</p>
+                        <div class="explore-btn">
+                            <a href="{{ route('scentopia.product.detail') }}"> <img
+                                    src="/website/scentopia/explore.png" alt="Zenith" class=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <img src="/website/scentopia/product/3.png" alt="Zenith" class="img-fluid">
+
+                        <p class="swiper-content">An explosion of vibrant luxury, designed to ignite passion and
+                            captivate your senses.</p>
+                        <div class="explore-btn">
+                            <a href="{{ route('scentopia.product.detail') }}"> <img
+                                    src="/website/scentopia/explore.png" alt="Zenith" class=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <img src="/website/scentopia/product/4.png" alt="Aura" class="img-fluid">
+
+                        <p class="swiper-content">An explosion of vibrant luxury, designed to ignite passion and
+                            captivate your senses.</p>
+                        <div class="explore-btn">
+                            <a href="{{ route('scentopia.product.detail') }}"> <img
+                                    src="/website/scentopia/explore.png" alt="Zenith" class=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container mb-120">
+        <p class="sub-title mobil-subtitle my-5 text-center fs-3-2">
+            Let our AI Fragrance Finder and <br>
+            Fragrance Matchmaker hook you up
+        </p>
+
+        <div class=" my-5">
+            <div class="  navgationbox  ">
+                <div class=" mx-5 mb-4 ">
+                    <a href="{{ route('aifragrancefinder') }}"> <img
+                            src="{{ asset('website/assets/images/Ai-FF_Mobile.png') }}"
+                            class=" cardboximg   img-fluid" alt="AI Fragrance Finder"></a>
+
+                </div>
+                <div class="  mx-5 mb-4 ">
+                    <a href="{{ route('fragrancematchmaker') }}"> <img
+                            src="{{ asset('website/assets/images/FMM_Desktop.png') }}" class=" cardboximg img-fluid"
+                            alt="Fragrance Matchmaker"> </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="profile-card">
+            <!-- Place <div> tag where you want the feed to appear -->
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank"
+                    class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+            <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+            <script type="text/javascript">
+                /* curator-feed-default-feed-layout */
+                (function() {
+                    var i, e, d = document,
+                        s = "script";
+                    i = d.createElement("script");
+                    i.async = 1;
+                    i.charset = "UTF-8";
+                    i.src = "https://cdn.curator.io/published/2470dd23-133f-4f26-97b3-f259119c2763.js";
+                    e = d.getElementsByTagName(s)[0];
+                    e.parentNode.insertBefore(i, e);
+                })();
+            </script>
+        </div>
+
+    </div>
+
+
+    <script>
+        // JavaScript code to handle video end event
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("bgVideo");
+            const content = document.getElementById("content");
+
+            // Hide content initially
+            content.style.display = "none";
+
+            // Show content only when the video ends with animation
+            video.onended = function() {
+                content.style.display = "flex";
+                setTimeout(() => {
+                    content.classList.add("show"); // Add animation class
+                }, 100); // Delay ensures smooth transition
+
+
+
+            };
+
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const popupOverlay = document.getElementById("popupOverlay");
+            const popup = document.getElementById("popup");
+            const popupTitle = document.getElementById("popupTitle");
+            const popupImage = document.getElementById("popupImage");
+            const popupDescription = document.getElementById("description");
+
+            let currentIndex = 0;
+
+            const items = [{
+                    title: "Top Note",
+                    image: "/website/scentopia/icone/4.png",
+                    desc: [
+                        "Mint",
+                        "Thyme",
+                        "Lavender",
+                        "Lemon"
+                    ]
+                },
+                {
+                    title: "Middle Note",
+                    image: "/website/scentopia/icone/2.png",
+                    desc: [
+                        "Leather",
+                        "Pepper",
+                        "Geranium"
+                    ]
+                },
+                {
+                    title: "Base Note ",
+                    image: "/website/scentopia/icone/1.png",
+                    desc: [
+                        "Amber",
+                        "Vanilla",
+                        "Cashmeran"
+                    ]
+                },
+                {
+                    title: "Essential Oils  ",
+                    image: "/website/scentopia/icone/3.png",
+                    desc: [
+                        "Schinus Terebinthifolius Seed Oil",
+                        "Pogostemon Cablin Leaf Oil."
+                    ]
+                },
+                {
+                    title: "Natural Oils",
+                    image: "/website/scentopia/icone/5.png",
+                    desc: [
+                        "Patchouli Oil",
+                        "West Australian Sandalwood Oil",
+                        "Myrrh Oil",
+                        "Balsam",
+                        "Egyptian Jasmine Absolute.",
+                    ]
+                },
+                {
+                    title: "Fragrance Accords",
+                    image: "/website/scentopia/icone/Nostagic.png",
+                    desc: [
+                        "Aromatic Woody ",
+                        "Lustrous",
+                        "Crisp",
+                        "Elegant"
+                    ]
+                }
+            ];
+
+            function updatePopup() {
+                popupTitle.innerText = items[currentIndex].title;
+                popupImage.src = items[currentIndex].image;
+
+                // Clear existing description
+                popupDescription.innerHTML = "";
+
+                // Create a new list and append all items dynamically
+                const ul = document.createElement("ul");
+                items[currentIndex].desc.forEach(point => {
+                    const li = document.createElement("li");
+                    li.innerText = point;
+                    li.classList.add("mb-2"); // Maintain spacing
+                    ul.appendChild(li);
+                });
+
+                popupDescription.appendChild(ul);
+            }
+
+            window.openPopup = function(index) {
+                currentIndex = index;
+                updatePopup();
+                const popupOverlay = document.getElementById("popupOverlay");
+                const popup = document.getElementById("popup");
+                const video = document.getElementById("popupVideo");
+
+                popupOverlay.style.display = "flex";
+                popup.style.display = "none"; // Hide popup initially
+                video.style.display = "block"; // Show video
+
+                // Play video from start
+                video.currentTime = 0;
+                video.play();
+
+                // When video ends, hide video and show popup
+                video.onended = function() {
+                    video.style.display = "none";
+                    popup.style.display = "block";
+                    // popup.classList.add("show");
+                };
+
+                // Optional: If you want to skip after 5 seconds automatically
+                // setTimeout(() => {
+                //     video.pause();
+                //     video.style.display = "none";
+                //     popup.style.display = "block";
+                //     popup.classList.add("show");
+                // }, 5000);
+            };
+
+
+            window.closePopup = function() {
+                popup.classList.add("hide"); // Start hide animation
+                setTimeout(() => {
+                    popupOverlay.style.display = "none"; // Hide after animation completes
+                    popup.classList.remove("hide"); // Reset for next time
+                }, 300);
+            };
+
+            window.nextItem = function() {
+                currentIndex = (currentIndex + 1) % items.length;
+                updatePopup();
+            };
+
+            window.prevItem = function() {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updatePopup();
+            };
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+        });
+    </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const ctx = document.getElementById('fragranceChart').getContext('2d');
+
+                    new Chart(ctx, {
+                        type: 'polarArea',
+                        data: {
+                            labels: [
+                                'Aromatic', 'Woody', 'Fresh Spicy', 'Amber', 'Warm Spicy',
+                                'Powdery', 'Musky', 'Vanilla', 'White floral', 'Patchouli'
+                            ],
+                            datasets: [{
+                                label: 'Fragrance Notes',
+                                data: [95, 75, 55, 40, 35, 28, 25, 20, 15, 12],
+                                backgroundColor: [
+                                    '#e5aa1f', '#c8c8c8', '#c9980c', '#f1f1f1',
+                                    '#a9a9a9',
+                                    '#b5b5b5', '#caa631', '#b3880f', '#d8d8d8',
+                                    '#bfbfbf'
+                                ],
+                                borderColor: 'transparent'
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            animation: {
+                                duration: 5000,
+                                easing: 'easeOutQuart'
+                            },
+                            plugins: {
+                                datalabels: {
+                                    color: '#000',
+                                    font: {
+                                        weight: 'bold',
+                                        size: 13
+                                    },
+                                    formatter: (value, context) => {
+                                        const label = context.chart.data.labels[context
+                                            .dataIndex];
+                                        return `${label}: ${value}%`;
+                                    }
+                                },
+                                tooltip: {
+                                    enabled: true,
+                                    backgroundColor: '#222',
+                                    titleColor: '#fff',
+                                    bodyColor: '#ffd700',
+                                    callbacks: {
+                                        label: function(context) {
+                                            const label = context.label || '';
+                                            const value = context.raw || 0;
+                                            return `${label}: ${value}%`;
+                                        }
+                                    }
+                                },
+                                legend: {
+                                    display: false
+                                }
+                            },
+                            scales: {
+                                r: {
+                                    ticks: {
+                                        display: false
+                                    },
+                                    grid: {
+                                        color: '#555'
+                                    },
+                                    angleLines: {
+                                        color: '#777'
+                                    },
+                                    pointLabels: {
+                                        color: '#fff',
+                                        font: {
+                                            size: 14
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '-150px 0px' // 👈 Trigger when 150px before coming into view
+        });
+
+        observer.observe(document.getElementById('fragranceChart'));
+    </script>
+
+
+    @include('website.scentopia.music')
+
+    <div id="lottie-bg"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-bg'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'animation.json' // Your lottie file path
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".mouse"), {
+            max: 20,
+            speed: 600,
+            scale: 1.05,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
+
+
+
+</x-app-layout>

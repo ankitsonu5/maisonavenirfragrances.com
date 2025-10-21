@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Seasons-Bold;
+    src: url(../fonts/The-Seasons/Fontspring-DEMO-theseasons-reg.otf) format('truetype');
+}
+body {
+    font-family: Seasons-Bold;
+}
+.splitter{
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
