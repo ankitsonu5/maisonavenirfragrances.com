@@ -138,10 +138,10 @@
 
                                 <div class="extraButtons extra-buttons d-none">
                                     <a target="_blank" href="{{ $data->buy_url }}" class="my-2  mobile-button">
-                                        <button class="custom-button">Buy in USA</button>
+                                        <button class="custom-button">BUY UAE AMAZON</button>
                                     </a>
                                     <a target="_blank" href="{{ $data->uk_buy_url }}" class="my-2 mobile-button">
-                                        <button class="custom-button">Buy in UK</button>
+                                        <button class="custom-button">BUY UAE NOON</button>
                                     </a>
                                 </div>
                             </div>
@@ -210,13 +210,13 @@
                                     @if ($data->buy_url)
                                         <a target="_blank" href="{{ $data->buy_url }}"
                                             class="mx-2 my-4 desktop-button">
-                                            <button class="custom-button">Buy in USA</button>
+                                            <button class="custom-button">BUY UAE AMAZON</button>
                                         </a>
                                     @endif
                                     @if ($data->uk_buy_url)
                                         <a target="_blank" href="{{ $data->uk_buy_url }}"
                                             class="my-4 desktop-button">
-                                            <button class="custom-button">Buy in UK</button>
+                                            <button class="custom-button">BUY UAE NOON</button>
 
                                         </a>
                                     @endif

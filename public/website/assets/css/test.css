@@ -2089,7 +2089,7 @@ span {
     background-color: #fff0;
     color: #cab651;
     border: 1px solid #cab651;
-    font-size: 35px;
+    font-size: 30px;
     font-family: var(--font-family-theseasons-regular);
     border-radius: 13px;
     font-weight: 400;
@@ -2382,7 +2382,7 @@ span {
     .custom-button {
         width: 212px;
         height: 50px;
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .swiper-slide {
