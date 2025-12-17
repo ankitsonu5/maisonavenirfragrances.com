@@ -775,6 +775,18 @@
 
 
         <div class="col-md-3">
+            {!! Form::label('uae_buy_url', ' Amazon UAE URL ', [
+                'class' => 'col-form-label text-capitalize
+                                                label-align',
+            ]) !!}
+            {!! Form::text('uae_buy_url', null, ['class' => 'form-control', 'id' => 'uae_buy_url']) !!}
+            @error('uae_buy_url')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
+        </div>
+
+
+        <div class="col-md-3">
             {!! Form::label('uk_buy_url', 'All Beauty UK URL ', [
                 'class' => 'col-form-label text-capitalize
                                                 label-align',

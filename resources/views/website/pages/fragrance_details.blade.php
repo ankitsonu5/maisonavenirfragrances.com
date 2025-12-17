@@ -1,4 +1,4 @@
-<x-app-layout :title="$data['meta_title']" :description="$data['meta_description']">
+﻿<x-app-layout :title="$data['meta_title']" :description="$data['meta_description']">
     <div class="main-hight">
         <div class="row main-content" id="mainContent">
             <div class="sliding-content d-flex">
@@ -130,19 +130,28 @@
 
 
                         <!-- Mobile Buy Now Button -->
-                        @if (!empty($data->buy_url))
+                        @if (!empty($data->buy_url) || !empty($data->uae_buy_url) || !empty($data->uk_buy_url))
                             <div class="button-container">
                                 <button class="buyNowButton custom-button mobile-button">
                                     Buy Now <span class="toggleIcon"><i class="bi bi-chevron-compact-down"></i></span>
                                 </button>
 
                                 <div class="extraButtons extra-buttons d-none">
+                                    @if ($data->buy_url)
                                     <a target="_blank" href="{{ $data->buy_url }}" class="my-2  mobile-button">
+                                        <button class="custom-button">BUY USA AMAZON</button>
+                                    </a>
+                                    @endif
+                                    @if ($data->uae_buy_url)
+                                        <a target="_blank" href="{{ $data->uae_buy_url }}" class="my-2  mobile-button">
                                         <button class="custom-button">BUY UAE AMAZON</button>
                                     </a>
+                                    @endif
+                                    @if ($data->uk_buy_url)
                                     <a target="_blank" href="{{ $data->uk_buy_url }}" class="my-2 mobile-button">
                                         <button class="custom-button">BUY UAE NOON</button>
                                     </a>
+                                    @endif
                                 </div>
                             </div>
                         @endif
@@ -200,7 +209,7 @@
                         </div>
 
                         <!-- Desktop Buy Now Button -->
-                        @if (!empty($data->buy_url))
+                        @if (!empty($data->buy_url) || !empty($data->uae_buy_url) || !empty($data->uk_buy_url))
                             <div class="button-container">
                                 <button class="buyNowButton custom-button desktop-button">
                                     Buy Now <span class="toggleIcon"><i class="bi bi-chevron-compact-down"></i></span>
@@ -209,6 +218,12 @@
                                 <div class="extraButtons extra-buttons d-none">
                                     @if ($data->buy_url)
                                         <a target="_blank" href="{{ $data->buy_url }}"
+                                            class="mx-2 my-4 desktop-button">
+                                            <button class="custom-button">BUY USA AMAZON</button>
+                                        </a>
+                                    @endif
+                                    @if ($data->uae_buy_url)
+                                        <a target="_blank" href="{{ $data->uae_buy_url }}"
                                             class="mx-2 my-4 desktop-button">
                                             <button class="custom-button">BUY UAE AMAZON</button>
                                         </a>

@@ -67,6 +67,7 @@ class Product extends BaseModel
         'hone',
         'ai_text',
         'buy_url',
+        'uae_buy_url',
         'primary_image',
         'secondary_image',
         'show_name',
