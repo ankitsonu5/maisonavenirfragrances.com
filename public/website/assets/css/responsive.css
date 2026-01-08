@@ -641,8 +641,8 @@
     }
 
     .custom-button {
-        height: 42px;
-        width: 150px;
+        /* height: 42px;
+        width: 150px; */
         font-size: 22px;
         margin-top: 2px
     }

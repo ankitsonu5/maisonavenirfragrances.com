@@ -15,7 +15,7 @@ return new class extends Migration {
 
             // Foreign key to user_system_tracking
             $table->foreignId('user_system_tracking_id')
-                ->constrained('user_system_trackings')
+                ->constrained('user_system_tracking')
                 ->onDelete('cascade'); // Deletes record if the parent record is deleted
 
             // Foreign keys for products
