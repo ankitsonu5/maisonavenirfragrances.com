@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('products', function (Blueprint $table) {
-           
-            $table->string('essential_oil');
+            if (!Schema::hasColumn('products', 'essential_oil')) {
+                $table->string('essential_oil')->nullable();
+            }
         });
     }
 

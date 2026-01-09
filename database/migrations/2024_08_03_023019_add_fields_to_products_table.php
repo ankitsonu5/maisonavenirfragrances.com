@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('products', function (Blueprint $table) {
-            
-            $table->string('top_icone');
-            $table->string('heart_icone');
-            $table->string('base_icone');
-       
-
-
+            if (!Schema::hasColumn('products', 'top_icone')) {
+                $table->string('top_icone')->nullable();
+            }
+            if (!Schema::hasColumn('products', 'heart_icone')) {
+                $table->string('heart_icone')->nullable();
+            }
+            if (!Schema::hasColumn('products', 'base_icone')) {
+                $table->string('base_icone')->nullable();
+            }
         });
     }
 

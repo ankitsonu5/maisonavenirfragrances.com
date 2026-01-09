@@ -94,6 +94,31 @@
         })
     });
 </script>
+
+<!-- Dropdown Fix for Sidebar -->
+<script>
+    $(document).ready(function() {
+        // Reinitialize MetisMenu
+        setTimeout(function() {
+            if ($.fn.metisMenu) {
+                $("#menu").metisMenu();
+            }
+        }, 100);
+
+        // Ensure dropdown arrows work
+        $(".metismenu a.has-arrow").on("click", function(e) {
+            e.preventDefault();
+            var parent = $(this).parent();
+            if (parent.hasClass("mm-active")) {
+                parent.removeClass("mm-active");
+                parent.find("ul").slideUp();
+            } else {
+                parent.addClass("mm-active");
+                parent.find("ul").slideDown();
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
