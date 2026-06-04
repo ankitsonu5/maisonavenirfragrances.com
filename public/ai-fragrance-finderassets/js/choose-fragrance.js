@@ -1,4 +1,4 @@
-/** 
+/**
  * commented the below to allow the user to select any
  * user can go directly to step 3 - fragrance families
  */
@@ -41,11 +41,11 @@ if (!selectedFamily || selectedFamily === "none" || selectedFamily === "[]") {
 */
 
 document.getElementById("link-1").addEventListener("click", function (event) {
-  localStorage.setItem("selectedIngredients", "none");
+    localStorage.setItem("selectedIngredients", "none");
 });
 document.getElementById("link-2").addEventListener("click", function (event) {
-  localStorage.setItem("selectedAccord", "none");
+    localStorage.setItem("selectedAccord", "none");
 });
 document.getElementById("link-3").addEventListener("click", function (event) {
-  localStorage.setItem("selectedFamily", "none");
+    localStorage.setItem("selectedFamily", "none");
 });

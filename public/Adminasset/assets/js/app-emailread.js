@@ -1,8 +1,6 @@
-$(function() {
-	"use strict";
+$(function () {
+    "use strict";
 
-    new PerfectScrollbar('.email-navigation');
-    new PerfectScrollbar('.email-read-box');
-
-
+    new PerfectScrollbar(".email-navigation");
+    new PerfectScrollbar(".email-read-box");
 });

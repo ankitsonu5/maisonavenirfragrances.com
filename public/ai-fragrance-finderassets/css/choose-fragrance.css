@@ -52,11 +52,11 @@ input[type="radio"] {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-  }
-  
-  .header-logo {
+}
+
+.header-logo {
     padding-bottom: 11vh;
-  }
+}
 
 .option {
     display: flex;
@@ -75,7 +75,7 @@ input[type="radio"] {
 
 .input-labels a {
     text-decoration: none;
-    color: #A0814C;
+    color: #a0814c;
 }
 
 .form-heading {
@@ -83,7 +83,7 @@ input[type="radio"] {
     line-height: 60px;
     text-align: center;
     font-weight: 700;
-    color: #E5E0CD;
+    color: #e5e0cd;
 }
 
 .form-bg {
@@ -104,7 +104,7 @@ input[type="radio"] {
     gap: 40px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     .options {
         gap: 120px;
     }
@@ -170,7 +170,7 @@ input[type="radio"] {
 
 .fy,
 .fg {
-    color: #A0814C;
+    color: #a0814c;
     font-size: 24px;
     line-height: 36px;
     font-weight: 700;
@@ -178,7 +178,7 @@ input[type="radio"] {
 }
 
 .borders {
-    border: 1px solid #A0814C;
+    border: 1px solid #a0814c;
 }
 
 .splitter {
@@ -190,12 +190,11 @@ input[type="radio"] {
     transform: rotate(180deg);
 }
 
-.frag-links{
+.frag-links {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    color: #FFFFFFB2;
+    color: #ffffffb2;
     align-items: center;
 }
-

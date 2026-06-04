@@ -1,7 +1,5 @@
-$(function() {
-	"use strict";
+$(function () {
+    "use strict";
 
-    feather.replace()
-
-
+    feather.replace();
 });

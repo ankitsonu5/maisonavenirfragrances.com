@@ -19,7 +19,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .header-logo img {
@@ -27,11 +26,11 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-  }
-  
-  .header-logo {
+}
+
+.header-logo {
     padding-bottom: 11vh;
-  }
+}
 
 .occasion-page {
     padding-top: 20px;
@@ -54,7 +53,7 @@ label {
 }
 
 .selected {
-    border-color: #A0814C;
+    border-color: #a0814c;
     border-radius: 8px;
     position: relative;
     width: 150px;
@@ -89,7 +88,7 @@ input[type="checkbox"] {
     line-height: 60px;
     text-align: center;
     font-weight: 700;
-    color: #E5E0CD;
+    color: #e5e0cd;
 }
 
 .ingredient-option {

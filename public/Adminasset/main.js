@@ -113,7 +113,7 @@ $(document).ready(function () {
     $tdCheckbox.on("change", function () {
         $selectAll.prop(
             "checked",
-            $tdCheckbox.length === $tdCheckbox.filter(":checked").length
+            $tdCheckbox.length === $tdCheckbox.filter(":checked").length,
         );
     });
 
@@ -131,7 +131,7 @@ $(document).ready(function () {
         $Categorie.prop(
             "checked",
             $tdCheckboxCategorie.length ===
-            $tdCheckboxCategorie.filter(":checked").length
+                $tdCheckboxCategorie.filter(":checked").length,
         );
     });
 
@@ -160,22 +160,21 @@ $(document).ready(function () {
 
 // Delete
 
-
 // Delete
 function confirmDelete(element) {
     Swal.fire({
-        title: 'Are you sure?',
+        title: "Are you sure?",
         text: "You won't be able to revert this!",
-        icon: 'warning',
+        icon: "warning",
         showCancelButton: true,
-        confirmButtonText: 'Yes, delete it!',
-        cancelButtonText: 'Cancel',
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "Cancel",
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
     }).then((result) => {
         if (result.isConfirmed) {
             // Find the nearest form and submit it
-            let form = element.closest('form');
+            let form = element.closest("form");
             if (form) {
                 form.submit();
             }
@@ -183,20 +182,9 @@ function confirmDelete(element) {
     });
 }
 
-
-
-
-
-
 $("#Sessionselect").change(function () {
     // $("#CurrentSession").submit();
 });
-
-
-
-
-
-
 
 // Export button click event
 $(".export-button").on("click", function (e) {
@@ -214,9 +202,6 @@ $(".export-button").on("click", function (e) {
         if (result.isConfirmed) {
             // Redirect to the export URL
             window.location.href = exportUrl;
-
         }
     });
 });
-
-

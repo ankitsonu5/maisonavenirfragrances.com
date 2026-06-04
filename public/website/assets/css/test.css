@@ -213,12 +213,14 @@ a {
 
 @font-face {
     font-family: "TheSeasons-Regular";
-    src: url(https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-reg.otf) format("opentype");
+    src: url(https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-reg.otf)
+        format("opentype");
 }
 
 @font-face {
     font-family: "TheSeasons-Bold";
-    src: url(https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-bd.otf) format("opentype");
+    src: url(https://anima-uploads.s3.amazonaws.com/projects/66771ed9bfa33ec04d25dd63/fonts/fontspring-demo-theseasons-bd.otf)
+        format("opentype");
 }
 
 .home-menu {
@@ -1431,7 +1433,8 @@ span {
     width: 100%;
     margin-bottom: 94px;
     height: 500px;
-    background: url(https://cdn.animaapp.com/projects/66a25bce01fc51e85ac99e37/releases/66a25c9b9c10ec57227fb8ca/img/about-1@1x.png) no-repeat center center/cover;
+    background: url(https://cdn.animaapp.com/projects/66a25bce01fc51e85ac99e37/releases/66a25c9b9c10ec57227fb8ca/img/about-1@1x.png)
+        no-repeat center center/cover;
 }
 
 .banner-text {
@@ -1489,7 +1492,9 @@ span {
     color: gold;
     background-color: #fff0;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
 }
 
 .contact-btn:hover {
@@ -4062,7 +4067,9 @@ input[type="radio"] {
     color: #fff;
     font-family: var(--font-family-raleway);
     font-size: 18px;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition:
+        opacity 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
     transform: translateY(10px);
 }
 
@@ -4125,7 +4132,9 @@ input[type="radio"] {
     text-align: center;
     opacity: 0;
     transform: scale(0);
-    transition: opacity 0.5s ease-out, transform 1.5s ease-out;
+    transition:
+        opacity 0.5s ease-out,
+        transform 1.5s ease-out;
 }
 
 .content.show {
@@ -4195,25 +4204,30 @@ input[type="radio"] {
     min-height: 350px;
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
     border: 1px solid rgb(255 255 255 / 0.5);
 }
 
-
 .popup.show {
-    -webkit-animation: tilt-in-fwd-bl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: tilt-in-fwd-bl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
     animation: tilt-in-fwd-bl 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes tilt-in-fwd-bl {
     0% {
-        -webkit-transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px) skew(-35deg, 10deg);
-        transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px) skew(-35deg, 10deg);
+        -webkit-transform: rotateY(-20deg) rotateX(-35deg)
+            translate(-300px, 300px) skew(-35deg, 10deg);
+        transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px)
+            skew(-35deg, 10deg);
         opacity: 0;
     }
 
     100% {
-        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0)
+            skew(0deg, 0deg);
         transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
         opacity: 1;
     }
@@ -4221,13 +4235,16 @@ input[type="radio"] {
 
 @keyframes tilt-in-fwd-bl {
     0% {
-        -webkit-transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px) skew(-35deg, 10deg);
-        transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px) skew(-35deg, 10deg);
+        -webkit-transform: rotateY(-20deg) rotateX(-35deg)
+            translate(-300px, 300px) skew(-35deg, 10deg);
+        transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px)
+            skew(-35deg, 10deg);
         opacity: 0;
     }
 
     100% {
-        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0)
+            skew(0deg, 0deg);
         transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
         opacity: 1;
     }
@@ -4437,13 +4454,11 @@ input[type="radio"] {
 .popup-text,
 .popup-description {
     width: 100%;
-
 }
 
 .popup-content {
     width: 100%;
     display: block;
-
 }
 
 .product-description h1 {
@@ -4648,7 +4663,7 @@ a.viewproductbut img {
 }
 
 #description li::before {
-    content: '•';
+    content: "•";
     position: absolute;
     left: 0;
     color: #fff;
@@ -4753,11 +4768,9 @@ a.viewproductbut img {
     font-family: var(--font-family-raleway);
 }
 
-
 .short-description {
     line-height: 22px;
 }
-
 
 .description-container {
     margin-bottom: 22px;
@@ -4786,9 +4799,6 @@ a.viewproductbut img {
     /* Ensure it appears above other elements */
 }
 
-
-
-
 .background-video {
     position: absolute;
     top: 0;
@@ -4806,12 +4816,10 @@ a.viewproductbut img {
     mix-blend-mode: lighten;
     /* Try other modes: screen, overlay, etc. */
     background-color: transparent;
-
 }
 
-
 .secand-section {
-    background-image: url('/website/scentopia/bgnew.png') !important;
+    background-image: url("/website/scentopia/bgnew.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -4831,7 +4839,8 @@ a.viewproductbut img {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: inset 10px 10px 20px rgba(255, 255, 255, 0.15),
+    box-shadow:
+        inset 10px 10px 20px rgba(255, 255, 255, 0.15),
         10px 10px 20px rgba(0, 0, 0, 0.2),
         inset -10px -10px 20px rgba(255, 255, 255, 0.05);
 }
@@ -4905,10 +4914,9 @@ a.viewproductbut img {
     }
 }
 
-
 .divider {
     width: 2px;
-    background-color: #D4CFBF;
+    background-color: #d4cfbf;
     height: 100%;
     margin: 0 auto;
 }
@@ -4917,12 +4925,12 @@ a.viewproductbut img {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: #D4CFBF;
+    color: #d4cfbf;
 }
 
 .content-block {
     text-align: center;
-    color: #D4CFBF;
+    color: #d4cfbf;
     padding: 1rem;
     text-transform: capitalize;
 }
@@ -4932,8 +4940,6 @@ a.viewproductbut img {
     font-size: 19px;
     font-family: var(--font-family-theseasons-bold);
 }
-
-
 
 .content-block small {
     font-weight: 700;
@@ -4946,8 +4952,6 @@ a.viewproductbut img {
     height: 600px;
     position: relative;
 }
-
-
 
 .gender-box img {
     height: 500px;

@@ -1,6 +1,7 @@
 @font-face {
     font-family: Seasons-Bold;
-    src: url(./fonts/The-Seasons/Fontspring-DEMO-theseasons-reg.otf) format('truetype');
+    src: url(./fonts/The-Seasons/Fontspring-DEMO-theseasons-reg.otf)
+        format("truetype");
 }
 
 .contact-us form {
@@ -21,7 +22,7 @@ input {
 
 input[type="submit"] {
     margin-top: 10px;
-    background-color: #E0B500;
+    background-color: #e0b500;
     padding: 10px;
     border: none;
     border-radius: 8px;
